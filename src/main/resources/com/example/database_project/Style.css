@@ -1,0 +1,51 @@
+/* styles.css */
+
+/* Style for the TableView */
+.table-view {
+    -fx-padding: 0px;
+    -fx-border-color: #AAB7C4; /* Lighter shade for border */
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+}
+
+/* Style for the TableColumn headers */
+.table-view .column-header-background {
+    -fx-background-radius: 8px 8px 0 0;
+    -fx-background-color: #4A6572; /* Lighter shade of the original background */
+}
+
+.table-view .column-header {
+    -fx-border-color: #D9E2E9; /* Subtle border contrast */
+    -fx-border-width: 1px;
+    -fx-alignment: center;
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bolder; /* Stronger emphasis */
+    -fx-text-fill: #F7FBFC; /* Very light text for contrast */
+}
+
+/* Style for the TableRow */
+.table-view .table-row-cell {
+    -fx-border-color: transparent transparent #E1EBF0 transparent; /* Light row separator */
+    -fx-border-width: 0 0 1px 0;
+}
+
+/* Style for the TableCell */
+.table-view .table-cell {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold; /* Enhanced emphasis for cell text */
+    -fx-text-fill: #5C7480; /* Slightly darker for stronger presence */
+    -fx-padding: 5px;
+}
+
+/* Alternate row colors */
+.table-view .table-row-cell:odd {
+    -fx-background-color: #EAF3F8; /* Light pastel blue */
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color: #D6E6EF; /* Slightly darker pastel blue */
+}

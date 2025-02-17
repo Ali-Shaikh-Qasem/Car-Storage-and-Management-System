@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.database_project.LoginController">
+   <left>
+      <AnchorPane prefHeight="502.0" prefWidth="343.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="324.0" fitWidth="372.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/LOGO.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="69.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Back">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="356.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="login_pane" layoutX="0.0" layoutY="0.0" prefHeight="500.0" prefWidth="356.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="txt_username_in" layoutX="103.0" layoutY="212.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #2C2C2C; -fx-border-width: 0px 0px 2px 0px;" />
+                  <PasswordField fx:id="txt_pass_in" layoutX="104.0" layoutY="261.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #2C2C2C; -fx-border-width: 0px 0px 2px 0px;" />
+                  <FontAwesomeIcon fill="#2c2c2c" glyphName="USER" layoutX="80.0" layoutY="234.0" size="20" text="" />
+                  <FontAwesomeIcon fill="#2c2c2c" glyphName="KEY" layoutX="78.0" layoutY="282.0" size="20" />
+                  <FontAwesomeIcon fill="#2c2c2c" glyphName="USERS" layoutX="150.0" layoutY="118.0" size="50" />
+                  <Text fill="#2c2c2c" layoutX="125.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Users Login">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btn_login" layoutX="111.0" layoutY="319.0" mnemonicParsing="false" onAction="#Login" prefHeight="26.0" prefWidth="130.0" style="-fx-background-color: #2C2C2C;" text="Login" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="108.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dont have an account?" />
+                  <Button fx:id="btn_signup_inlogin" layoutX="241.0" layoutY="438.0" mnemonicParsing="false" onAction="#SignuppaneShow" style="-fx-background-color: #2C2C2C;" text="Sign up" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="signup_pane" layoutX="0.0" layoutY="0.0" prefHeight="500.0" prefWidth="356.0" style="-fx-background-color: white;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="btn_close_signup" layoutX="329.0" layoutY="2.0" mnemonicParsing="false" onAction="#LoginpaneShow" style="-fx-background-color: #2C2C2C;" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" />
+                     </graphic>
+                  </Button>
+                  <TextField fx:id="txt_username_up" layoutX="102.0" layoutY="214.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #2c2c2c; -fx-border-width: 0px 0px 2px 0px;" />
+                  <TextField fx:id="txt_email" layoutX="103.0" layoutY="262.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: #2c2c2c; -fx-border-width: 0px 0px 2px 0px;" />
+                  <TextField fx:id="txt_pass_up" layoutX="104.0" layoutY="310.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #2c2c2c; -fx-border-width: 0px 0px 2px 0px;" />
+                  <FontAwesomeIcon glyphName="USERS" layoutX="150.0" layoutY="112.0" size="50" />
+                  <Text layoutX="125.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Users Sign up">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <FontAwesomeIcon glyphName="USER" layoutX="79.0" layoutY="235.0" size="20" />
+                  <FontAwesomeIcon glyphName="INBOX" layoutX="78.0" layoutY="283.0" size="20" />
+                  <FontAwesomeIcon glyphName="KEY" layoutX="77.0" layoutY="331.0" size="20" />
+                  <Button fx:id="btn_signup_insignup" layoutX="115.0" layoutY="368.0" mnemonicParsing="false" onAction="#add_users" prefHeight="26.0" prefWidth="121.0" style="-fx-background-color: #2c2c2c;" text="Sign up" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

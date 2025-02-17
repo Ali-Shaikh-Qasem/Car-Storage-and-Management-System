@@ -1,0 +1,21 @@
+/* styles.css */
+
+/* Default style for all buttons */
+.button {
+    -fx-background-color: #36454F; /* Slightly lighter shade of #36454F */
+    -fx-text-fill: white;
+    -fx-border-color: #36454F; /* Match the background color */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 5, 0, 0, 0);
+    -fx-border-radius: 10px;
+    -fx-border-width: 2px;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#5A676E, #4A5358); /* Slightly lighter and vibrant shades */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 7, 0.2, 0, 0); /* Softer shadow with less opacity */
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(#2B3239, #2A3338); /* Darker tones for pressed effect */
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.8), 7, 0.4, 0, 0); /* Softer and deeper inner shadow */
+}
