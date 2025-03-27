@@ -15,7 +15,7 @@ The **Car Management Store System** is a database-driven application designed to
 - **Backend**: Java (Core logic & database handling)
 - **Database**: MySQL (or other relational databases)
 - **ORM**: Hibernate (if used for database interaction)
-- **IDE**: IntelliJ IDEA / Eclipse / NetBeans
+- **IDE**: IntelliJ IDEA
 
 
 ## Usage
